@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Tienda Tech 💻</h1>
+  <p>Potencia tu mundo digital</p>
+</header>
+
+<nav class="nav">
+  <a href="#">Inicio</a>
+  <a href="#">Productos</a>
+  <a href="#">Ofertas</a>
+  <a href="#">Contacto</a>
+</nav>
+
+<section class="hero">
+  <h2>Las mejores computadoras del mercado</h2>
+  <p>Encuentra equipos gamer, oficina y notebooks al mejor precio</p>
+  <button>Ver productos</button>
+</section>
+
+<main class="container">
+
+  <section class="card">
+    <img src="https://via.placeholder.com/300x200" alt="PC Gamer">
+    <h2>PC Gamer</h2>
+    <p>Intel i7, 16GB RAM, RTX 3060</p>
+    <p class="price">$900.000</p>
+    <button onclick="agregarProducto('PC Gamer', 900000)">Comprar</button>
+  </section>
+
+  <section class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Notebook">
+    <h2>Notebook Pro</h2>
+    <p>Ryzen 5, 8GB RAM, SSD 512GB</p>
+    <p class="price">$550.000</p>
+    <button onclick="agregarProducto('Notebook Pro', 550000)">Comprar</button>
+  </section>
+
+  <section class="card">
+    <img src="https://via.placeholder.com/300x200" alt="PC Oficina">
+    <h2>PC Oficina</h2>
+    <p>Intel i5, 8GB RAM, SSD 256GB</p>
+    <p class="price">$400.000</p>
+    <button onclick="agregarProducto('PC Oficina', 400000)">Comprar</button>
+  </section>
+
+</main>
+
+<!-- CARRITO -->
+<section class="carrito">
+  <h2>🛒 Carrito de compras</h2>
+  <ul id="lista-carrito"></ul>
+  <p>Total: $<span id="total">0</span></p>
+  <button onclick="vaciarCarrito()">Vaciar carrito</button>
+</section>
+
+<footer class="footer">
+  <p>© 2026 - Tienda Tech | Desarrollado por Benjamín Navarro</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
